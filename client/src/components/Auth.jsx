@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import InputSet from "./InputSet";
+import { useAuth } from "../Context/AuthContext";
 // import InputSet {inputGroupStyle, lebelStyle, labelText, inputType, inputName, inputValue, inputOnChange, inputPlaceHolder, inputStyle, autoComplete } from "./InputSet {inputGroupStyle, lebelStyle, labelText, inputType, inputName, inputValue, inputOnChange, inputPlaceHolder, inputStyle, autoComplete }";
 
 const Auth = () => {
     const [isSignUp, setIsSignUp] = useState(false);
+    const {checkAuth} = useAuth();
 
     const [formData, setFormData] = useState({
         name: "",
@@ -166,6 +168,8 @@ const Auth = () => {
                 },
                 withCredentials: true
             });
+
+            await checkAuth();
             console.log("res in success login - ", res);
         }
         catch (error) {
@@ -180,7 +184,8 @@ const Auth = () => {
             var res = await axios.post("https://localhost:7243/api/Employees/Signup", formData, {
                 headers: {
                     "Content-Type": "Application/json"
-                }
+                },
+                withCredentials : true
             });
 
             console.log("signup response - ", res);

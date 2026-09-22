@@ -385,9 +385,9 @@ namespace EF_Core_WebApi.Controllers
 
 
         // logged in user
-        [HttpGet("me")]
+        [HttpGet("Me")]
         [Authorize]
-        public IActionResult GetLoggedInUser()
+        public IActionResult Me()
         {
             ApiResponseModel res = new();
             try
@@ -416,6 +416,27 @@ namespace EF_Core_WebApi.Controllers
                 res.Results =null;
             }
             return Ok(res);
+        }
+
+        [HttpPost("Logout")]
+        public async Task<IActionResult> Logout()
+        {
+            ApiResponseModel response = new();
+            try {
+                Response.Cookies.Delete("access_token");
+
+                response.StatusCode = HttpStatusCode.OK;
+                response.Message = "Logged out successfully";
+                response.Results = null;
+                response.Errors = null;
+            }
+            catch (Exception ex) {
+                response.StatusCode = HttpStatusCode.ExpectationFailed;
+                response.Message = ex.Message;
+                response.Errors = ex.Message;
+                response.Results = null;
+            }
+            return Ok(response);
         }
 
     }

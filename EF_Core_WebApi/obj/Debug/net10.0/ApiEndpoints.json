@@ -141,8 +141,18 @@
   },
   {
     "ContainingType": "EF_Core_WebApi.Controllers.EmployeesController",
-    "Method": "GetLoggedInUser",
-    "RelativePath": "api/Employees/me",
+    "Method": "Logout",
+    "RelativePath": "api/Employees/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EF_Core_WebApi.Controllers.EmployeesController",
+    "Method": "Me",
+    "RelativePath": "api/Employees/Me",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

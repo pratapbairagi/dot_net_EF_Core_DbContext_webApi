@@ -287,8 +287,20 @@
         }
       }
     },
-    "/api/Employees/me": {
+    "/api/Employees/Me": {
       "get": {
+        "tags": [
+          "Employees"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Employees/Logout": {
+      "post": {
         "tags": [
           "Employees"
         ],

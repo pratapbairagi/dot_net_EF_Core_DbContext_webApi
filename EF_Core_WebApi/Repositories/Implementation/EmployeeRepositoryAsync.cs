@@ -509,6 +509,7 @@ namespace EF_Core_WebApi.Repositories.Implementation
                 var claims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.Email, loginModel.Email),
+                    new Claim(ClaimTypes.Name, loginModel.Name),
                     new Claim(ClaimTypes.NameIdentifier, loginModel.UserId.ToString()),
                     new Claim("Age", "18")
                     //new Claim(ClaimTypes.Expired, DateTime.UtcNow.AddDays(double.Parse(expirationn)).ToString("dd/MM/yyyy"))

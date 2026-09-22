@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4049CA1-7DAF-1626-CFFC-1464DB5B431A}|EF_Core_WebApi\\EF_Core_WebApi.csproj|c:\\users\\pooja\\desktop\\dot net\\dot net separation of every part\\ef_core_webapi\\ef_core_webapi\\servicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4049CA1-7DAF-1626-CFFC-1464DB5B431A}|EF_Core_WebApi\\EF_Core_WebApi.csproj|solutionrelative:ef_core_webapi\\servicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4049CA1-7DAF-1626-CFFC-1464DB5B431A}|EF_Core_WebApi\\EF_Core_WebApi.csproj|c:\\users\\pooja\\desktop\\dot net\\dot net separation of every part\\ef_core_webapi\\ef_core_webapi\\models\\requestmodels\\employeesearchrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4049CA1-7DAF-1626-CFFC-1464DB5B431A}|EF_Core_WebApi\\EF_Core_WebApi.csproj|solutionrelative:ef_core_webapi\\models\\requestmodels\\employeesearchrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -52,22 +44,10 @@
               "RelativeDocumentMoniker": "EF_Core_WebApi\\Controllers\\EmployeesController.cs",
               "ToolTip": "C:\\Users\\pooja\\Desktop\\DOT NET\\dot net separation of every part\\EF_Core_WebApi\\EF_Core_WebApi\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "EF_Core_WebApi\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAGMBAAAAAAAAAAAcwEEBAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAcwIUBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-26T08:06:35.994Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmployeeSearchRequestModel.cs",
-              "DocumentMoniker": "C:\\Users\\pooja\\Desktop\\DOT NET\\dot net separation of every part\\EF_Core_WebApi\\EF_Core_WebApi\\Models\\RequestModels\\EmployeeSearchRequestModel.cs",
-              "RelativeDocumentMoniker": "EF_Core_WebApi\\Models\\RequestModels\\EmployeeSearchRequestModel.cs",
-              "ToolTip": "C:\\Users\\pooja\\Desktop\\DOT NET\\dot net separation of every part\\EF_Core_WebApi\\EF_Core_WebApi\\Models\\RequestModels\\EmployeeSearchRequestModel.cs",
-              "RelativeToolTip": "EF_Core_WebApi\\Models\\RequestModels\\EmployeeSearchRequestModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T05:57:31.793Z"
             },
             {
               "$type": "Document",
@@ -77,10 +57,14 @@
               "RelativeDocumentMoniker": "EF_Core_WebApi\\Repositories\\Implementation\\EmployeeRepositoryAsync.cs",
               "ToolTip": "C:\\Users\\pooja\\Desktop\\DOT NET\\dot net separation of every part\\EF_Core_WebApi\\EF_Core_WebApi\\Repositories\\Implementation\\EmployeeRepositoryAsync.cs",
               "RelativeToolTip": "EF_Core_WebApi\\Repositories\\Implementation\\EmployeeRepositoryAsync.cs",
-              "ViewState": "AgIAAAMCAAAAAAAAAAAAAAoCAABAAAAAAAAAAA==",
+              "ViewState": "AgIAALwBAAAAAAAAAAAqwAICAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-26T08:25:07.53Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -92,8 +76,7 @@
               "RelativeToolTip": "EF_Core_WebApi\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwDYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T05:24:07.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T05:24:07.415Z"
             },
             {
               "$type": "Document",
