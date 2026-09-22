@@ -516,9 +516,11 @@ namespace EF_Core_WebApi.Repositories.Implementation
 
                 var tokenDescriptor = new SecurityTokenDescriptor()
                 {
-                    Subject = new ClaimsIdentity(),
+                    Subject = new ClaimsIdentity(claims),
                     //Expires = DateTime.UtcNow.AddDays(double.Parse(expirationn)),
                     Expires = DateTime.UtcNow.AddMinutes(int.Parse(expirationn)),
+                    Issuer = _configuration["Token:Issuer"],
+                    Audience = _configuration["Token:Audience"],
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
                 };
 

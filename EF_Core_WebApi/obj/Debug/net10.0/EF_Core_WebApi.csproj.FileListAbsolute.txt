@@ -169,3 +169,4 @@ C:\Users\pooja\Desktop\DOT NET\dot net separation of every part\EF_Core_WebApi\E
 C:\Users\pooja\Desktop\DOT NET\dot net separation of every part\EF_Core_WebApi\EF_Core_WebApi\obj\Debug\net10.0\EF_Core_WebApi.pdb
 C:\Users\pooja\Desktop\DOT NET\dot net separation of every part\EF_Core_WebApi\EF_Core_WebApi\obj\Debug\net10.0\EF_Core_WebApi.genruntimeconfig.cache
 C:\Users\pooja\Desktop\DOT NET\dot net separation of every part\EF_Core_WebApi\EF_Core_WebApi\obj\Debug\net10.0\ref\EF_Core_WebApi.dll
+C:\Users\pooja\Desktop\DOT NET\dot net separation of every part\EF_Core_WebApi\EF_Core_WebApi\obj\Debug\net10.0\EF_Core_WebApi.sourcelink.json

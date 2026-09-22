@@ -1,11 +1,15 @@
 
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 // import { NavLink } from "react-router-dom";
+
 
 
 const Header = () => {
 
+const navigate = useNavigate();
+const { isLoggedIn, logout } = useAuth();
     const [isMobile, setIsMobile] = useState(
         window.innerWidth <= 768
     );
@@ -108,10 +112,10 @@ const Header = () => {
         },
 
         loginButton: {
-            width : "max-content",
+            width: "max-content",
             // minWidth: "90px",
             height: "40px",
-            lineHeight : "40px",
+            lineHeight: "40px",
             padding: "0 18px",
             border: "1px solid #667eea",
             borderRadius: "7px",
@@ -195,7 +199,7 @@ const Header = () => {
     const handleLogin = () => {
         console.log("Login clicked");
 
-        
+
         // Example:
         // navigate("/login");
     };
@@ -242,35 +246,32 @@ const Header = () => {
                 {!isMobile && (
 
                     <div style={styles.desktopRight}>
+                        {isLoggedIn ?
+                            <button style={styles.loginButton} onClick={async () => { await logout(); navigate("/auth"); }}>
+                                Logout
+                            </button> :
+                            <NavLink
+                                type="button"
+                                style={styles.loginButton}
+                                // onClick={handleLogin}
+                                to="/auth"
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.backgroundColor =
+                                        "#667eea";
+                                    e.currentTarget.style.color =
+                                        "#ffffff";
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.backgroundColor =
+                                        "#ffffff";
+                                    e.currentTarget.style.color =
+                                        "#667eea";
+                                }}
+                            >
+                                Account
+                            </NavLink>
+                        }
 
-                        <NavLink
-                            type="button"
-                            style={styles.loginButton}
-                            // onClick={handleLogin}
-                            to="/auth"
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor =
-                                    "#667eea";
-                                e.currentTarget.style.color =
-                                    "#ffffff";
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.backgroundColor =
-                                    "#ffffff";
-                                e.currentTarget.style.color =
-                                    "#667eea";
-                            }}
-                        >
-                            Account
-                        </NavLink>
-
-                        {/* <button
-                            type="button"
-                            style={styles.signupButton}
-                            onClick={handleSignup}
-                        >
-                            Sign Up
-                        </button> */}
 
                     </div>
 

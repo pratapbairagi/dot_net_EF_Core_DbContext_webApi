@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import AddEmployeePopup from "./AddEmployeePopup";
+import ProtectedRoute from "../ProtectedRoute";
 // import Header from "./Header";
 
 const Home = () => {
@@ -236,6 +237,7 @@ const Home = () => {
         }
     }
     return (
+        <ProtectedRoute>
             <div style={styles.page}>
                         {/* <Header/> */}
                         {/* popup - employee creation/add form - start */}
@@ -636,6 +638,7 @@ const Home = () => {
                         </div>
             
                     </div>
+                    </ProtectedRoute>
     );
 };
 

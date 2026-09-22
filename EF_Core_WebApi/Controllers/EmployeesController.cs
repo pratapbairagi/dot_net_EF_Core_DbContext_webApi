@@ -14,6 +14,7 @@ namespace EF_Core_WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployeesController : ControllerBase
     {
         //private readonly ApplicationDbContext _dbContext; 
@@ -268,6 +269,7 @@ namespace EF_Core_WebApi.Controllers
     
 
     // login
+    [AllowAnonymous]
     [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginRequestModel loginForm)
         {
@@ -323,6 +325,7 @@ namespace EF_Core_WebApi.Controllers
             return Ok(response);
         }
 
+        [AllowAnonymous]
         [HttpPost("Signup")]
         public async Task<IActionResult> Signup(EmployeeRequestModel signupForm)
         {
